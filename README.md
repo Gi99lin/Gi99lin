@@ -1,9 +1,13 @@
-# Hi there, I'm Ivan (Gi99lin) 💻
+<h1 align="center">Hi there, I'm Ivan (Gi99lin) 💻</h1>
 
-**Backend & DevOps Engineer | AI & HomeLab Enthusiast**
+<p align="center">
+  <b>Backend & DevOps Engineer | AI & HomeLab Enthusiast</b>
+</p>
 
-I specialize in building and deploying robust infrastructure, personal AI ecosystems, and backend services.
-I love working with containers, orchestrators, and open-source tools.
+<p align="center">
+  I specialize in building and deploying robust infrastructure, personal AI ecosystems, and backend services. 
+  I love working with containers, orchestrators, and open-source tools.
+</p>
 
 ---
 
@@ -15,17 +19,10 @@ I love working with containers, orchestrators, and open-source tools.
 
 ---
 
-### 📊 GitHub Stats
+### 📊 GitHub Stats & Metrics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Gi99lin&show_icons=true&theme=transparent&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gi99lin&layout=compact&theme=transparent&hide_border=true" alt="Top Languages" width="48%" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gi99lin&theme=transparent&hide_border=true" alt="GitHub Streak" />
+  <img src="github-metrics.svg" alt="GitHub Metrics" width="100%" />
 </div>
 
 ---
