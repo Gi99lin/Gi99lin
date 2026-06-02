@@ -15,13 +15,14 @@ jobs:
       - name: Generate metrics
         uses: lowlighter/metrics@latest
         with:
-          # Используем стандартный GITHUB_TOKEN (для публичной статистики этого достаточно)
+          # Используем стандартный GITHUB_TOKEN
           token: ${{ secrets.GITHUB_TOKEN }}
           
           # Основные настройки
           user: Gi99lin
           template: classic
-          base: header, activity, community, repositories, metadata
+          # Оставляем только шапку и активность, убираем блоки с нулями (community, repositories)
+          base: header, activity
           config_timezone: Europe/Moscow
           
           # Плагин языков программирования
@@ -30,5 +31,9 @@ jobs:
           plugin_languages_details: percentage
           plugin_languages_limit: 8
           
-          # Плагин строк кода (добавлено/удалено)
-          plugin_lines: yes
+          # Плагин привычек кодинга (показывает часы активности и дни недели)
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_charts: yes
+          plugin_habits_trim: yes
