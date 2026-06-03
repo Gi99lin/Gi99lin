@@ -21,19 +21,17 @@ jobs:
           # Основные настройки
           user: Gi99lin
           template: classic
-          # Оставляем только шапку и активность, убираем блоки с нулями (community, repositories)
+          # Оставляем только шапку и активность, убираем блоки с нулями
           base: header, activity
           config_timezone: Europe/Moscow
           
-          # Плагин языков программирования
+          # Плагин языков программирования (работает со стандартным токеном)
           plugin_languages: yes
           plugin_languages_ignored: html, css
           plugin_languages_details: percentage
           plugin_languages_limit: 8
           
-          # Плагин привычек кодинга (показывает часы активности и дни недели)
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_charts: yes
-          plugin_habits_trim: yes
+          # 3D календарь активности (Isocalendar) вместо забагованного habits
+          # Выглядит премиально и работает со стандартным токеном
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
