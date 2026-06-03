@@ -18,6 +18,9 @@ jobs:
           # Используем стандартный GITHUB_TOKEN
           token: ${{ secrets.GITHUB_TOKEN }}
           
+          # Указываем новое имя файла, чтобы обойти жесткое кэширование GitHub (Camo)
+          filename: profile-metrics.svg
+          
           # Основные настройки
           user: Gi99lin
           template: classic
@@ -25,13 +28,12 @@ jobs:
           base: header, activity
           config_timezone: Europe/Moscow
           
-          # Плагин языков программирования (работает со стандартным токеном)
+          # Плагин языков программирования
           plugin_languages: yes
           plugin_languages_ignored: html, css
           plugin_languages_details: percentage
           plugin_languages_limit: 8
           
-          # 3D календарь активности (Isocalendar) вместо забагованного habits
-          # Выглядит премиально и работает со стандартным токеном
+          # 3D календарь активности
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
